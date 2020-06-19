@@ -1,60 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent"
-    android:layout_width="wrap_content"
-    android:id="@+id/container"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
     <RelativeLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".SaveData">
+
         <ImageView
+            android:id="@+id/image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:id="@+id/image"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/image"
-            android:hint="user name"/>
+            android:hint="user name" />
+
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/et_address"
-            android:layout_below="@+id/et_name"
-            android:hint="user Email"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/et_email"
-            android:layout_below="@+id/et_address"
-            android:hint="user address"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:hint="user Email" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_email"
+            android:hint="user address" />
 
         <EditText
             android:id="@+id/et_mobile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/et_email"
-            android:layout_marginTop="-5dp"
-            android:hint="user Mobile No"
-            tools:ignore="MissingConstraints" />
+            android:layout_below="@+id/et_address"
+            android:hint="user Mobile No" />
+
+        <EditText
+            android:id="@+id/et_fathername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_mobile"
+            android:hint="user fathername" />
+
+        <EditText
+            android:id="@+id/et_mothername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_fathername"
+            android:hint="user mothername" />
+
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_mothername"
+            android:hint="user city" />
+
+        <EditText
+            android:id="@+id/et_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_city"
+            android:hint="user country" />
+
+        <EditText
+            android:id="@+id/et_postalcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_country"
+            android:hint="user postalcade" />
+
+        <EditText
+            android:id="@+id/et_companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_postalcode"
+            android:hint="user companyname" />
 
         <Button
+            android:id="@+id/firebasesend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/senddata"
-            android:layout_below="@+id/et_mobile"
-            android:text="send Data"/>
+            android:layout_below="@+id/et_companyname"
+            android:text="send Data" />
+
         <Button
+            android:id="@+id/loaddata"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/senddata"
-            android:id="@+id/loaddata"
-            android:text="Load data"/>
+            android:layout_below="@+id/firebasesend"
+            android:text="Load data" />
     </RelativeLayout>
 </ScrollView>

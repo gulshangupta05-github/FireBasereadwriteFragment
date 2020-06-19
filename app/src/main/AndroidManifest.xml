@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoadData"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".AllDataRecyclerView"></activity>
+        <activity android:name=".LoadData" />
+        <activity android:name=".SaveData">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

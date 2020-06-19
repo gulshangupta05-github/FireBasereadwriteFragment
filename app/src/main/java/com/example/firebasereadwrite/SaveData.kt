@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.firebasereadwrite.savedata.SaveDataFragment
 
-class MainActivity : AppCompatActivity() {
+class SaveData : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
