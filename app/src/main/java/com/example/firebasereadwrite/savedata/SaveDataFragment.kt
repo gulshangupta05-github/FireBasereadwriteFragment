@@ -9,13 +9,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.firebasereadwrite.LoadData
+import com.example.firebasereadwrite.LoadDataActivity
 
 import com.example.firebasereadwrite.R
 import com.example.firebasereadwrite.userInfo.UserInfo
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.save_data_fragment.*
-import kotlin.math.log
 
 class SaveDataFragment : Fragment() {
 
@@ -53,7 +52,7 @@ class SaveDataFragment : Fragment() {
             val sCompany = et_companyname.text.toString().trim()
 
             if (sName == "" || sAddress == "" || sEmail == "" || sMobile == "" || sFather == ""
-                           || sMother == "" || sCity == "" || sCountry == "" || sPostal == "" || sCompany == ""
+                || sMother == "" || sCity == "" || sCountry == "" || sPostal == "" || sCompany == ""
             ) {
                 Toast.makeText(context, "Empty", Toast.LENGTH_SHORT).show()
             } else {
@@ -81,7 +80,7 @@ class SaveDataFragment : Fragment() {
             }
         }
         loaddata.setOnClickListener() {
-            val intent = Intent(context, LoadData::class.java)
+            val intent = Intent(context, LoadDataActivity::class.java)
             startActivity(intent)
             Log.d(TAG, "pass")
         }

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/container"
     tools:context=".alldatarecyclerview.AllDataRecyclerviewFragment"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
 <!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
@@ -25,14 +25,15 @@
             android:id="@+id/tvEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        android:textSize="25dp"
-            android:textColor="#433B3B" />
+         android:textSize="25dp"
+        android:textColor="#000" />
 
         <TextView
             android:id="@+id/tvAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
          android:textSize="25dp"
+            android:textColor="#000"
             />
 
         <TextView
@@ -40,43 +41,60 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#000"
             tools:ignore="MissingConstraints" />
         <TextView
             android:id="@+id/tvFather"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#000"
             tools:ignore="MissingConstraints" />
         <TextView
             android:id="@+id/tvMother"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#000"
             tools:ignore="MissingConstraints" />
         <TextView
             android:id="@+id/tvCity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#000"
             tools:ignore="MissingConstraints" />
         <TextView
             android:id="@+id/tvCountry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#000"
             tools:ignore="MissingConstraints" />
         <TextView
             android:id="@+id/tvPostal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#000"
             tools:ignore="MissingConstraints" />
         <TextView
             android:id="@+id/tvCompanyname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="25dp"
+            android:textColor="#000"
             tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Button"
+        android:id="@+id/edit_profile"
+        android:textSize="25dp"
+        android:textColor="#F5F5F6"
+        android:textAllCaps="true"
+        android:background="#619A1F"/>
 
     </LinearLayout>
 

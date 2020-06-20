@@ -88,17 +88,10 @@
             android:hint="user companyname" />
 
         <Button
-            android:id="@+id/firebasesend"
+            android:id="@+id/resend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/et_companyname"
-            android:text="send Data" />
-
-        <Button
-            android:id="@+id/loaddata"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/firebasesend"
-            android:text="Load data" />
+            android:text="Save Data" />
     </RelativeLayout>
 </ScrollView>

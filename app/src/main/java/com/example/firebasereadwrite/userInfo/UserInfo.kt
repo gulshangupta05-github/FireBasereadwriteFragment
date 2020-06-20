@@ -3,34 +3,36 @@ package com.example.firebasereadwrite.userInfo
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
-data  class UserInfo(
-    @SerializedName ("name")
-    val name:String="",
+data class UserInfo(
+    @SerializedName("document_id")
+    val document_id: String = "",
+    @SerializedName("name")
+    val name: String = "",
 
     @SerializedName("email")
-    val email:String="",
+    val email: String = "",
 
     @SerializedName("address")
-    val address:String="",
+    val address: String = "",
 
     @SerializedName("mobile")
-    val mobile:String="",
+    val mobile: String = "",
 
     @SerializedName("father")
-    val father:String="",
+    val father: String = "",
 
     @SerializedName("mother")
-    val  mother:String="",
+    val mother: String = "",
 
     @SerializedName("country")
-    val country:String="",
+    val country: String = "",
 
     @SerializedName("city")
-    val city:String="",
+    val city: String = "",
 
     @SerializedName("postal")
-    val postal:String="",
+    val postal: String = "",
 
     @SerializedName("company")
-    val company :String=""
+    val company: String = ""
 ) : Serializable

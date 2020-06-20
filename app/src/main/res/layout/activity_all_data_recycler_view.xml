@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/container"
-    tools:context=".AllDataRecyclerView">
+    tools:context=".AllDataRecyclerViewActivity">
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width=""-->
+<!--        android:layout_height=""-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
